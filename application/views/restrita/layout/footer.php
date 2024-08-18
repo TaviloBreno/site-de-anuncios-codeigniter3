@@ -15,6 +15,13 @@
 <script src="<?php echo base_url('public/restrita/') ?>assets/js/scripts.js"></script>
 <!-- Custom JS File -->
 <script src="<?php echo base_url('public/restrita/') ?>assets/js/custom.js"></script>
+
+<?php if (!empty($scripts)): ?>
+	<?php foreach ($scripts as $script): ?>
+		<script src="<?php echo base_url('public/restrita/') ?><?php echo $script; ?>"></script>
+	<?php endforeach; ?>
+<?php endif; ?>
+
 </body>
 
 
